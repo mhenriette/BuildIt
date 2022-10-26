@@ -3,9 +3,20 @@ import Image from 'next/image'
 import Button from '../components/Button'
 import Logos from '../components/Logos'
 import Contact from '../components/Contact'
+import { useRouter } from 'next/router'
+import Content from '../components/content'
 
 
 export default function Home() {
+  const router = useRouter()
+  function service(){
+    router.push('/Services')
+
+  }
+  function about(){
+    router.push('/About')
+
+  }
   return (
  <>
       <Head>
@@ -27,9 +38,9 @@ export default function Home() {
           {/* buttons */}
           <div className='text-xs font-bold flex space-x-3 '>
             
-            <Button text='Service' style={'bg-genoa p-5 shadow-2xl text-white shadow-blue-600'}/>
+            <Button text='Service' style={'bg-genoa p-5 shadow-2xl text-white shadow-blue-600'} onclick={service} />
           
-            <Button text='About The Company' style={' bg-lightindigo py-5 px-10  text-darkgenoa '}/>
+            <Button text='About The Company' style={' bg-lightindigo py-5 px-10  text-darkgenoa '} onclick={about} />
           </div>
         </div>
         {/* images */}
@@ -100,9 +111,13 @@ export default function Home() {
       <div className='flex gap-10 mx-auto md:px-32 container  items-center py-10 mb-20 '>
         <div className='w-full'><img src='/partner.svg'/></div>
         <div className='flex flex-col space-y-16 w-full'>
-          <h3 className='text-genoa text-base font-medium'>About us</h3>
-          <h1 className='text-4xl font-bold text-darkgenoa'>Owner and investor with a reputation</h1>
-          <p className=' text-base text-genoa leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer rhoncus, eros vel euismod tempor, ipsum magna tristique nisi, quis ullamcorper enim magna eu orci. Sed semper ex quis semper aliquet. Cras hendrerit molestie sapien sed fermentum. Mauris dui tortor, viverra vel ultrices in, congue sed ex.</p>
+        
+          <Content
+          title={'About us'}
+          subtitle={'Owner and investor with a reputation'}
+          paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer rhoncus, eros vel euismod tempor, ipsum magna tristique nisi, quis ullamcorper enim magna eu orci. Sed semper ex quis semper aliquet. Cras hendrerit molestie sapien sed fermentum. Mauris dui tortor, viverra vel ultrices in, congue sed ex.'}
+          styles={'space-y-5'}
+          />
           <div>
           <Button text='Explore ' style={'py-4 bg-genoa px-6 text-white w-1/2'} />
           </div>
@@ -112,10 +127,14 @@ export default function Home() {
       </div>
       <div className='grid grid-cols-2 mx-auto container md:px-32 py-20 my-32 items-center gap-5'>
         <div className='flex flex-col space-y-5'>
-          <h3 className='text-genoa text-base font-medium'>Available properties</h3>
-          <h1 className='text-4xl font-bold text-darkgenoa'>Featuring Listing</h1>
-          <p  className=' text-base text-genoa leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer rhoncus, eros vel euismod tempor, ipsum magna tristique nisi, quis ullamcorper enim magna eu orci. Sed semper ex quis semper aliquet. Cras hendrerit molestie sapien sed fermentum. Mauris dui tortor, viverra vel ultrices in, congue sed ex.</p>
-          <div>
+          
+          <Content
+          title={'Available properties'}
+          subtitle={'Featuring Listing'}
+          paragraph={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elit sem, vestibulum sed leo eu, malesuada pharetra mauris. Integer rhoncus, eros vel euismod tempor, ipsum magna tristique nisi, quis ullamcorper enim magna eu orci. Sed semper ex quis semper aliquet. Cras hendrerit molestie sapien sed fermentum. Mauris dui tortor, viverra vel ultrices in, congue sed ex.'}
+          styles={'space-y-5'}
+          />
+          <div className=''>
           <Button text='Explore ' style={'py-4 bg-genoa px-6 text-white w-1/2'} />
           </div>
         </div>
