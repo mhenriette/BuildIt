@@ -15,15 +15,15 @@ function Navbar() {
       <div className="flex justify-between items-center mx-auto container text-genoa py-16 md:px-32">
         <div className="flex  items-center space-x-3">
           {/* <img src="/Switch.svg" alt="logo"/ > */}
-          <a href="/">
+          <Link href="/">
             <div className="w-10 h-10 rounded-full bg-genoa" />
-          </a>
+          </Link>
           <p className="font-bold text-lg text-darkgenoa">BuildIt</p>
         </div>
         <ul className="flex space-x-5">
           {/* <li><Link href='/About' className={router.asPath==='/About'? "active" : "text-red-400"}>About</Link> </li> */}
           <li>
-            <a href="/About">About</a>{" "}
+            <Link href="/About">About</Link>{" "}
           </li>
           <li>
             <Link href="/Services">Service</Link>{" "}
