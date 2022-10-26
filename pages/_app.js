@@ -13,10 +13,12 @@ function MyApp({ Component, pageProps }) {
     setBg(bgs[document.title]);
   }, []);
   return (
-    <div className={bg + " bg-no-repeat"}>
+    <div className="mx-auto container md:px-32">
+    <div className={bg + " bg-no-repeat " }>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+    </div>
     </div>
   );
 }
