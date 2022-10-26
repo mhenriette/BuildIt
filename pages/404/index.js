@@ -1,7 +1,7 @@
 import { useRouter } from "next/router"
-import Button from "../../components/button";
+import Button from "../../components/Button";
 function otherid(props){
- 
+   const router = useRouter()
    function backhome(){
    router.push('/')
 
