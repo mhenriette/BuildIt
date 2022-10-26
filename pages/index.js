@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Button from '../components/button'
-import Logos from '../components/logos'
+import Button from '../components/Button'
+import Logos from '../components/Logos'
 import Contact from '../components/Contact'
 
 
