@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 import Button from "../button";
-import { useRouter } from "next/dist/client/router";
+
 function Navbar() {
-  const router = useRouter();
+
   // console.log(router.asPath)
   return (
     <>
