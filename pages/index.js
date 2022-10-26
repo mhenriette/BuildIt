@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Button from '../../components/button'
-import Logos from '../../components/logos'
-import Contact from '../../components/Contact'
+import Button from '../components/button'
+import Logos from '../components/logos'
+import Contact from '../components/Contact'
 
 
 export default function Home() {
