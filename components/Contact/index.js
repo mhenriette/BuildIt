@@ -44,7 +44,7 @@ function Contact() {
       <div className="bg-lightindigo rounded-sm h-72 w-1/2 box-border py-10 px-5 flex flex-col ">
         <div className="flex flex-row space-x-3">
           <div className="flex flex-col space-y-1">
-            <p className="text-darkgenoa" htmlFor="">name</p>
+            <label className="text-darkgenoa" htmlFor="name">name</label>
             <input
             name="name"
               placeholder="name"
@@ -53,7 +53,7 @@ function Contact() {
             ></input>
           </div>
           <div className="flex flex-col space-y-1">
-            <p className="text-darkgenoa">Email</p>
+            <label className="text-darkgenoa " htmlFor="email">Email</label>
             <input
             name="email"
               className="border rounded-sm  border-darkgenoa py-1 px-3"
@@ -63,7 +63,7 @@ function Contact() {
         </div>
 
         <div className="flex flex-col space-y-1">
-          <p className="text-darkgenoa">Subject</p>
+          <label className="text-darkgenoa" htmlFor="subject">Subject</label>
           <input
           name="subject"
             className="border rounded-sm  border-darkgenoa py-1 px-3"
@@ -71,10 +71,10 @@ function Contact() {
           ></input>
         </div>
         <div className="flex flex-col space-y-1">
-          <p className="text-darkgenoa">Message</p>
+          <label className="text-darkgenoa" htmlFor="message">Message</label>
           <textarea
             className="border rounded-sm  border-darkgenoa py-1 px-3"
-            type="text"
+            name="message"
           ></textarea>
         </div>
       </div>

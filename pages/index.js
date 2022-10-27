@@ -9,10 +9,10 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   const router = useRouter();
-  function service() {
+  function redirectToServicePage() {
     router.push("/Services");
   }
-  function about() {
+  function redirectToAboutPage() {
     router.push("/About");
   }
   return (
@@ -47,13 +47,13 @@ export default function Home() {
               <Button
                 text="Service"
                 style={"bg-genoa p-5 shadow-2xl text-white shadow-blue-600"}
-                onclick={service}
+                onclick={redirectToServicePage}
               />
 
               <Button
                 text="About The Company"
                 style={" bg-lightindigo py-5 px-10  text-darkgenoa "}
-                onclick={about}
+                onclick={redirectToAboutPage}
               />
             </div>
           </div>
@@ -67,15 +67,15 @@ export default function Home() {
                 <img src=" /house4.svg " alt="house4" />
               </div>
               <div>
-                <img src="/house1.svg"   alt="house1" />
+                <img src="/house1.svg" alt="house1" />
               </div>
             </div>
             <div className="flex items-start gap-5">
               <div>
-                <img src="/house2svg.svg"  alt="house2"  />
+                <img src="/house2svg.svg" alt="house2" />
               </div>
               <div>
-                <img src="/house5.svg"  alt="house5"  />
+                <img src="/house5.svg" alt="house5" />
               </div>
             </div>
           </div>
@@ -91,13 +91,13 @@ export default function Home() {
           {/* card 1 */}
           <div className="flex flex-col space-y-5">
             <div className="p-4 rounded-md bg-darkgenoa shadow-md  max-w-fit">
-              <img src="/serviceicon1.svg"  alt="icon"/>
+              <img src="/serviceicon1.svg" alt="icon" />
             </div>
             <h1 className="text-2xl text-darkgenoa font-bold">
               Featured Listing
             </h1>
             <p className="text-genoa text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
           {/* card 2 */}
@@ -109,19 +109,19 @@ export default function Home() {
               Featured Listing
             </h1>
             <p className="text-genoa text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
           {/* card 3 */}
           <div className="flex flex-col space-y-5">
             <div className="p-4 rounded-md bg-darkgenoa shadow-md  max-w-fit">
-              <img src="/serviceicon3.svg" alt="icon"/>
+              <img src="/serviceicon3.svg" alt="icon" />
             </div>
             <h1 className="text-2xl text-darkgenoa font-bold">
               Featured Listing
             </h1>
             <p className="text-genoa text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
         <Logos />
         <div className="flex gap-10 mx-auto md:px-32 container  items-center   ">
           <div className="w-full">
-            <img src="/partner.svg" alt="partner"/>
+            <img src="/partner.svg" alt="partner" />
           </div>
           <div className="flex flex-col space-y-16 w-full">
             <Content
@@ -174,7 +174,7 @@ export default function Home() {
         <div className="flex gap-3">
           <div className="flex flex-col gap-3 ">
             <div>
-              <img src="/projectimg1.svg" alt="project"/>
+              <img src="/projectimg1.svg" alt="project" />
             </div>
             <div>
               <img src="/projectimg2.svg" alt="project" />
@@ -191,32 +191,32 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-innovative-bg">
-      <div className="flex flex-col mx-auto md:px-32 container py-52 space-y-10 ">
-        <div className="flex flex-col justify-center items-center">
-          <h3 className="text-genoa text-base font-medium">Socials</h3>
-          <h1 className="text-4xl font-bold text-darkgenoa">On Instagram</h1>
+        <div className="flex flex-col mx-auto md:px-32 container py-52 space-y-10 ">
+          <div className="flex flex-col justify-center items-center">
+            <h3 className="text-genoa text-base font-medium">Socials</h3>
+            <h1 className="text-4xl font-bold text-darkgenoa">On Instagram</h1>
+          </div>
+          <div className="grid grid-cols-3 gap-3  ">
+            <div>
+              <img src="/card1.svg" alt="card" />
+            </div>
+            <div>
+              <img src="/card2.svg" alt="card" />
+            </div>
+            <div>
+              <img src="/card3.svg" alt="card" />
+            </div>
+            <div>
+              <img src="/card4.svg" alt="card" />
+            </div>
+            <div>
+              <img src="/card5.svg" alt="card" />
+            </div>
+            <div>
+              <img src="/card6.svg" alt="card" />
+            </div>
+          </div>
         </div>
-        <div className="grid grid-cols-3 gap-3  ">
-          <div>
-            <img src="/card1.svg" alt="card"/>
-          </div>
-          <div>
-            <img src="/card2.svg" alt="card"/>
-          </div>
-          <div>
-            <img src="/card3.svg" alt="card"/>
-          </div>
-          <div>
-            <img src="/card4.svg"  alt="card"/>
-          </div>
-          <div>
-            <img src="/card5.svg" alt="card" />
-          </div>
-          <div>
-            <img src="/card6.svg" alt="card"/>
-          </div>
-        </div>
-      </div>
       </div>
       <Contact />
     </>

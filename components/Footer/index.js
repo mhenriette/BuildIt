@@ -26,10 +26,10 @@ function Footer() {
         </div>
         <div>
           <ul className="flex flex-col space-y-3">
-            <li>About us</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><Link href='/About'>About us</Link></li>
+            <li><Link href='/Services'>Services</Link> </li>
+            <li><Link href='/Projects'>Projects</Link> </li>
+            <li><Link href='/Contact'> Contact</Link></li>
           </ul>
         </div>
         <div className="flex flex-col space-y-10">
